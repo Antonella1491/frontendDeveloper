@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti - Antonella</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Assets/logo.png" type="image/png">
+</head>
+
+<body>
+  <header class="formHeader">
+    <!-- NAVBAR -->
+    <nav>
+      <div class="row">
+        <div class="col-1 logoColumn">
+           <a href="index.html" aria-label="logo home">
+                    <img src="Assets/logo.png" alt="Logo" class="logoImg">
+                </a>
+        </div>
+        <div class="col-5 nameColumn">
+          <p>Antonella Pirozzi</p>
+        </div>
+        <div class="col-6 linkColumn">
+          <ul>
+            <li><a href="#contatti">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <form class="contact-form">
+      <p class="titleForm">
+      Chiedimi Qualsiasi Informazione
+    </p>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="messaggio">Messaggio</label>
+      <textarea id="messaggio" name="messaggio" rows="5" placeholder="Inserisci un messaggio" required></textarea>
+
+      <button type="submit" class="btn">Invia</button>
+    </form>
+  </main>
+
+  <!-- MODALE DI CONFERMA -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Sei sicuro di voler inviare la mail?</h2>
+        <img class="closeBtnModal" id="closeBtn" src="Assets/Icone/ico_elimina.png" alt="close-btn" aria-label="close">
+      </div>
+
+      <div class="modal-buttons">
+        <button id="btnNo">No</button>
+        <button id="btnSi">Sì</button>
+
+      </div>
+    </div>
+  </div>
+
+<!-- FOOTER -->
+    <footer id="contatti">
+        <p>
+            <em>
+                Hai un’idea? Scrivimi, ci mettiamo subito al lavoro!
+            </em>
+        </p>
+        <p class="contactsLink">
+            <a href="mailto:antonellapirozz_ap@libero.it" target="_blank">
+                <img src="Assets/Icone/email ico.png" alt="email icona">
+            </a>
+            <a href="https://wa.me/3405560275" target="_blank">
+                <img src="Assets/Icone/whatsapp ico.png" alt="whatsapp icona">
+            </a>
+            <a href="https://www.linkedin.com/in/antonella-pirozzi-70585a22a/" target="_blank">
+                <img src="Assets/Icone/linkedin ico.png" alt="Linkedin icona">
+            </a>
+            <p>&copy; 2025 - Antonella Pirozzi - Frontend Developer</p>
+        </p>
+    </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+
+</html>
